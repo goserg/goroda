@@ -1,0 +1,24 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.city_container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: max-content;
+    width: min-content;
+    grid-gap: 0.5rem;
+}
+
+.city {
+    background-color: powderblue;
+    padding: 0.3rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.city .x {
+    margin-left: 3rem;
+    cursor: pointer;
+}

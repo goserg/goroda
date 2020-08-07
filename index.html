@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Города</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="app">
+    <h1>Игра "Города"</h1>
+    <input v-model="newCity" type="text" @keyup.enter="addCity()">
+    <div class="city_container">
+        <div class="city" v-for="city in reversedList">
+            {{ city }}
+            <div @click="deleteCity(city)" class="x">x</div>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
